@@ -107,5 +107,4 @@ $cases = $conn->query("SELECT lc.*, u.name AS officer_name FROM land_cases lc LE
         </table>
     </div>
 </body>
-
 </html>
