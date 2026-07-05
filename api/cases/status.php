@@ -35,7 +35,7 @@ $stmt->execute();
 if ($stmt->affected_rows > 0) {
     echo json_encode(['success' => true, 'message' => 'Status updated']);
 } else {
-    // Check if the case exists at all vs. just no change (status already the same)
+    
     $check = $conn->prepare("SELECT id FROM land_cases WHERE lrn = ?");
     $check->bind_param('s', $lrn);
     $check->execute();
