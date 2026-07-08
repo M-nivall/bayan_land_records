@@ -28,6 +28,7 @@ if ($owner_name === '' || $location === '' || $size_m2 === null) {
     exit;
 }
 
+
 $lrn = generateLRN($conn);
 
 $stmt = $conn->prepare("INSERT INTO land_cases (lrn, owner_name, location, size_m2, status) VALUES (?, ?, ?, ?, 'pending')");
