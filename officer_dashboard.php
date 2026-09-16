@@ -57,7 +57,7 @@ $cases = $stmt->get_result();
     <div class="card">
         <h2 style="margin-top:0; font-size:16px; color:#1e3d59;">My Land Cases</h2>
         <?php if ($cases->num_rows === 0): ?>
-            <div class="empty">You haven't created any land cases yet</div>
+            <div class="empty">You haven't created any land cases yet.</div>
         <?php else: ?>
         <table>
             <tr>
