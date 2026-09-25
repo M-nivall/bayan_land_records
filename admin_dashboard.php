@@ -67,7 +67,7 @@ $cases = $conn->query("SELECT lc.*, u.name AS officer_name FROM land_cases lc LE
     </div>
 
     <div class="card">
-        <h2 style="margin-top:0; font-size:16px; color:#1e3d59;">Add New Land Case.</h2>
+        <h2 style="margin-top:0; font-size:16px; color:#1e3d59;">Add New Land Case</h2>
         <?php if ($success): ?><div class="success"><?= htmlspecialchars($success) ?></div><?php endif; ?>
         <?php if ($error): ?><div class="error"><?= htmlspecialchars($error) ?></div><?php endif; ?>
         <form class="inline-form" method="POST" action="admin_dashboard.php">
